@@ -37,6 +37,11 @@ h1 {
     outline: none;
 }
 
+.text1 {
+    margin-left: 20px;
+    width: 180px;
+}
+
 .buttonAdd {
     width: 150px;
     height: 42px;
@@ -58,11 +63,16 @@ h1 {
 }
 
 .deleteButton {
+    height: 20px;
     border: none;
     outline: none;
     padding: 0;
-    height: 0;
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.deleteButton1 {
+    margin-right: 15px;
 }
 
 .sort {
@@ -71,4 +81,31 @@ h1 {
     background-color: transparent;
     outline: none;
     border: none;
+}
+
+.list {
+    width: 286px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.newlist {
+    width: 286px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.delete {
+    background-color: white;
 }
