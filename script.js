@@ -1,5 +1,3 @@
-// let inputText = document.querySelector('.inputText')
-// let container = document.querySelector('.container');
 let buttonAdd = document.querySelector('.buttonAdd');
 let deleteEl = document.querySelector('.deleteButton');
 let newList = document.querySelector('.newList');
@@ -7,10 +5,11 @@ let list = document.querySelector('.list');
 let text = document.querySelector('.text');
 let sort = document.querySelector('.sort');
 
+
 deleteEl.addEventListener('click', deleteDiv);
 
 function deleteDiv(event) {
-    event.target.parentElement.parentElement.remove();
+    event.target.parentElement.remove();
 }
 
 buttonAdd.addEventListener('click', addText);
@@ -26,31 +25,34 @@ function addText() {
 sort.addEventListener('click', sortDown);
 
 function sortDown() {
-
-}
-
-
-// buttonAdd.addEventListener('click', addText);
-
-// function addText() {
-//     let olo = newList.cloneNode(true);
-//     list.style.display = 'block';
-//     olo.style.display = 'block';
-//     list.append(olo);
-//     inputText.remove();
-//     let pop = olo.querySelector('.deleteButton');
-//     pop.addEventListener('click', deleteDiv);
-
-// }
-
-// buttonAdd.addEventListener('click', dobavlenie);
-
-// function dobavlenie() {
-//     let str = text.value; // получаем введенный текст
-//     let newDiv = document.createElement('div'); // создаем новый див
-//     let newP = document.createElement('p'); // оздаем новый параграф
-//     newP.textContent = str; // добавляем в параграф текс из инпута
-//     newDiv.append(newP); // создаем переменную в которой див, в которую добали параграф
-//     container.append(newDiv);
-//     newDiv.classList.add('lolo');
-// }
+    let newListarr = list.children;
+    let p = Array.from(newListarr);
+    if (sort.classList.contains('sort')) {
+        p.sort((a, b) => {
+            if (a.firstElementChild.value < b.firstElementChild.value) {
+                return -1;
+            }
+            if (a.firstElementChild.value > b.firstElementChild.value) {
+                return 1;
+            }
+            return 0;
+        });
+        sort.classList.add('sorbut');
+        sort.classList.remove('sort');
+    } else if (sort.classList.contains('sorbut')) {
+        p.sort((a, b) => {
+            if (a.firstElementChild.value > b.firstElementChild.value) {
+                return -1;
+            }
+            if (a.firstElementChild.value < b.firstElementChild.value) {
+                return 1;
+            }
+            return 0;
+        });
+        sort.classList.add('sort');
+        sort.classList.remove('sorbut');
+    }
+    p.forEach(item => {
+        list.appendChild(item);
+    });
+};
