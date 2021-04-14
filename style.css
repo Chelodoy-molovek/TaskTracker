@@ -76,11 +76,18 @@ h1 {
 }
 
 .sort {
+    background: url(/img/sort.svg) no-repeat;
+    height: 25px;
+    width: 25px;
     margin-left: 275px;
     margin-bottom: 5px;
     background-color: transparent;
     outline: none;
     border: none;
+}
+
+.sort:hover {
+    background: url(/img/Group\ 73.svg) no-repeat;
 }
 
 .list {
@@ -93,10 +100,9 @@ h1 {
     border-radius: 10px;
     margin-bottom: 10px;
     flex-wrap: wrap;
-    display: none;
 }
 
-.newlist {
+.newList {
     width: 286px;
     box-sizing: border-box;
     margin: 0 auto;

@@ -1,20 +1,43 @@
-let inputText = document.querySelector('.inputText')
+// let inputText = document.querySelector('.inputText')
+// let container = document.querySelector('.container');
 let buttonAdd = document.querySelector('.buttonAdd');
-let container = document.querySelector('.container');
 let deleteEl = document.querySelector('.deleteButton');
+let newList = document.querySelector('.newList');
+let list = document.querySelector('.list');
 let text = document.querySelector('.text');
+let sort = document.querySelector('.sort');
 
-// deleteEl.addEventListener('click', deleteDiv);
+deleteEl.addEventListener('click', deleteDiv);
 
-// function deleteDiv(event) {
-//     event.target.parentElement.parentElement.remove();
-// }
+function deleteDiv(event) {
+    event.target.parentElement.parentElement.remove();
+}
 
-// buttonAdd.addEventListener('click', slam1);
+buttonAdd.addEventListener('click', addText);
 
-// function slam1() {
-//     let olo = inputText.cloneNode(true);
-//     container.insertBefore(olo, buttonAdd);
+function addText() {
+    let olo = newList.cloneNode(true);
+    olo.firstElementChild.value = '';
+    list.append(olo);
+    let pop = olo.querySelector('.deleteButton');
+    pop.addEventListener('click', deleteDiv);
+}
+
+sort.addEventListener('click', sortDown);
+
+function sortDown() {
+
+}
+
+
+// buttonAdd.addEventListener('click', addText);
+
+// function addText() {
+//     let olo = newList.cloneNode(true);
+//     list.style.display = 'block';
+//     olo.style.display = 'block';
+//     list.append(olo);
+//     inputText.remove();
 //     let pop = olo.querySelector('.deleteButton');
 //     pop.addEventListener('click', deleteDiv);
 
@@ -29,5 +52,5 @@ let text = document.querySelector('.text');
 //     newP.textContent = str; // добавляем в параграф текс из инпута
 //     newDiv.append(newP); // создаем переменную в которой див, в которую добали параграф
 //     container.append(newDiv);
-//     newDiv.classList.add('lolo')
+//     newDiv.classList.add('lolo');
 // }
