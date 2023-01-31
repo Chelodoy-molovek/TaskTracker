@@ -1,144 +1,144 @@
 .container {
-    width: 336px;
-    margin: 0 auto;
-    border: 1px solid;
-    border-radius: 10px;
+  width: 336px;
+  margin: 0 auto;
+  border: 1px solid;
+  border-radius: 10px;
 }
 
 .yellowBackground {
-    background-color: #FFDC40;
-    height: 28px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  background-color: #ffdc40;
+  height: 28px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 h1 {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
 }
 
 .inputText {
-    width: 286px;
-    height: 40px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid #C4C4C4;
-    border-radius: 10px;
-    margin-bottom: 10px;
+  width: 286px;
+  height: 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .text {
-    border: none;
-    width: 220px;
-    padding: 0;
-    outline: none;
+  border: none;
+  width: 220px;
+  padding: 0;
+  outline: none;
 }
 
 .text1 {
-    margin-left: 20px;
-    width: 180px;
+  margin-left: 20px;
+  width: 180px;
 }
 
 .buttonAdd {
-    background: url(./img/Group\ 85.svg);
-    width: 150px;
-    height: 42px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-    background-color: #833AE0;
-    border: none;
-    margin-left: 90px;
-    margin-top: 22px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    outline: none;
+  background: url(./img/Group\ 85.svg);
+  width: 150px;
+  height: 42px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  background-color: #833ae0;
+  border: none;
+  margin-left: 90px;
+  margin-top: 22px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  outline: none;
 }
 
 .buttonAdd:hover {
-    background: url(./img/Group\ 41.svg);
+  background: url(./img/Group\ 41.svg);
 }
 
 .plus {
-    margin-left: -27px;
+  margin-left: -27px;
 }
 
 .deleteButton {
-    background-image: url(./img/delete.svg);
-    height: 20px;
-    width: 20px;
-    border: none;
-    outline: none;
-    padding: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: white;
+  background-image: url(./img/delete.svg);
+  height: 20px;
+  width: 20px;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
 }
 
 .deleteButton:hover {
-    background: url(./img/Group\ 70.svg);
+  background: url(./img/Group\ 70.svg);
 }
 
 .deleteButton1 {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .sort {
-    background: url(./img/sort.svg) no-repeat;
-    height: 25px;
-    width: 25px;
-    margin-left: 275px;
-    margin-bottom: 5px;
-    background-color: transparent;
-    outline: none;
-    border: none;
+  background: url(./img/sort.svg) no-repeat;
+  height: 25px;
+  width: 25px;
+  margin-left: 275px;
+  margin-bottom: 5px;
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
 
 .sort:hover {
-    background: url(./img/Group\ 73.svg) no-repeat;
+  background: url(./img/Group\ 73.svg) no-repeat;
 }
 
 .list {
-    width: 286px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid #C4C4C4;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
+  width: 286px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 .newList {
-    width: 286px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 10px;
-    flex-wrap: wrap;
+  width: 286px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  border: 1px solid;
+  margin-bottom: 5px;
 }
 
 .delete {
-    background-color: white;
+  background-color: white;
 }
 
 .sorbut {
-    background: url(./img/Group\ 90.svg) no-repeat;
-    height: 25px;
-    width: 25px;
-    margin-left: 275px;
-    margin-bottom: 5px;
-    background-color: transparent;
-    outline: none;
-    border: none;
+  background: url(./img/Group\ 90.svg) no-repeat;
+  height: 25px;
+  width: 25px;
+  margin-left: 275px;
+  margin-bottom: 5px;
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
 
 .sorbut:hover {
-    background: url(./img/Group\ 91.svg) no-repeat;
+  background: url(./img/Group\ 91.svg) no-repeat;
 }
